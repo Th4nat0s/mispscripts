@@ -1,0 +1,124 @@
+
+
+{
+  "uuid": "9413af2e-2616-4a4a-9b8b-835410871bfa",
+  "version": 2,
+  "name": "Phishing_website",
+  "description": "Phishing template to describe a phishing website and its analysis.",
+  "meta-category": "network",
+  "requiredOneOf": [
+    "url"
+  ],
+  "attributes": {
+    "internal-reference": {
+      "categories": [
+        "Internal reference"
+      ],
+      "description": "Internal reference such as ticket ID",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "screenshot": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Screenshot of phishing site",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Landing page of the phishing website",
+      "misp-attribute": "url",
+      "ui-priority": 2
+    },
+    "url-redirect": {
+      "description": "Redirect URL",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "hostname": {
+      "description": "FQDN of a URL",
+      "misp-attribute": "hostname",
+      "multiple": true,
+      "ui-priority": 4
+    },
+    "domain": {
+      "description": "Domain of a hostname",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "ip": {
+      "description": "IP address of hostname",
+      "misp-attribute": "ip-dst",
+      "disable_correlation": true,
+      "multiple": true,
+      "ui-priority": 6
+    },
+    "asn": {
+      "description": "AS number of an IP",
+      "misp-attribute": "AS",
+      "multiple": true,
+      "ui-priority": 7
+    },
+    "registrar": {
+      "description": "Registrar of a domain",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 8
+    },
+    "registration-date": {
+      "description": "Creation date of a domain",
+      "misp-attribute": "datetime",
+      "disable_correlation": true,
+      "multiple": true,
+      "ui-priority": 9
+    },
+    "hosting": {
+      "description": "Hosting provider of a website",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "dns": {
+      "description": "DNS provider of a domain",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 11
+    },
+    "certificate": {
+      "description": "SSL certificate issuer of a hostname",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 12
+    },
+    "certificate-date": {
+      "description": "Creation date of the SSL certificate of a hostname",
+      "misp-attribute": "datetime",
+      "disable_correlation": true,
+      "multiple": true,
+      "ui-priority": 13
+    },
+    "certificate-sn": {
+      "description": "Serial Number of the SSL certificate of a hostname",
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "multiple": true,
+      "ui-priority": 13
+    },
+    "other-comment": {
+      "description": "Text field for additional info not listed in other fields",
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "multiple": true,
+      "ui-priority": 14
+    }
+  }
+}
+
+
+
